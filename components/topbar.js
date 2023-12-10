@@ -6,6 +6,8 @@ import {useRouter} from "next/router";
 export default function TopBar({currentPage}) {
     const {currentLang, xSetLang} = languageProvider();
     const router = useRouter();
+    const whatsapp_url = process.env.NEXT_PUBLIC_WHATSAPP_URL;
+
 
     const toggleMenu = () => {
         const menu = document.querySelector(".main-menu");
@@ -58,8 +60,8 @@ export default function TopBar({currentPage}) {
                     </button>
 
                     <button className="whatsapp-btn" onClick={() => {
-                        router.push()
-                    }} style={{display: "none"}}><i className="fa-brands fa-whatsapp"></i> Whatsapp
+                        router.push(whatsapp_url)
+                    }}><i className="fa-brands fa-whatsapp"></i> Whatsapp
                     </button>
 
                     <select defaultValue={currentLang} onChange={handleSetLang}>
