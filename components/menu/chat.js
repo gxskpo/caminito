@@ -110,16 +110,16 @@ export default function ChatAssistant({setIDfn}) {
 
     const onInput = async (event) => {
         if (event.key === "Enter" && event.target.value !== "") {
-            event.target.value = "";
             await submitMessage(event.target.value);
+            event.target.value = "";
         }
     }
 
     const onSend = async () => {
         let input = document.querySelector(".chat-input input");
         if (input.value === "") return;
-        input.value = "";
         await submitMessage(input.value);
+        input.value = "";
     }
 
     return (
