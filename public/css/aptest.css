@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Rethink Sans');
+
+.chat-container-bk {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    overflow: hidden;
+    z-index: 9999999999;
+}
+
+.chat-container {
+    width: 96%;
+    margin-left: 2vw;
+    top: 9%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: fixed;
+}
+
+.chat-container .chat-header {
+    width: 100%;
+    height: 10%;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+.chat-container .chat-close {
+    position: absolute;
+    right: 1vw;
+    top: 1vh;
+    font-size: 2em;
+    border: none;
+    background-color: inherit;
+}
+
+.chat-container .chat-messages {
+    width: 100%;
+    height: 80%;
+    background-color: #fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.chat-container .chat-messages .chat-message {
+    width: 100%;
+    min-height: 15%;
+    height: auto;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+.chat-container .chat-messages .chat-message.has-embed {
+    min-height: 50%;
+}
+
+
+.chat-container .chat-messages .chat-message .chat-message-sender {
+    /* Name (user/assistant) */
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    font-size: 0.7em;
+    color: #006000;
+    font-weight: bold;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.chat-container .chat-messages .chat-message .menu-message-embed {
+    /* Embed */
+    /* make it to don't overlap the name or the message */
+    position: relative;
+    width: 70%;
+    height: 80%;
+    bottom: 0;
+    font-size: 1em;
+    color: #000;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.chat-container .chat-messages .chat-message .menu-message-embed img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.chat-container .chat-messages .chat-message .menu-message-embed .menu-message-embed-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 0.7em;
+    padding-left: 1%;
+    padding-top: 1%;
+    border-radius: 0 0 15px 15px;
+}
+
+.chat-container .chat-messages .chat-message .chat-message-content {
+    /* Message */
+    position: relative;
+    left: 0;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    color: #000;
+    padding-left: 1%;
+    padding-top: 1%;
+    word-wrap: break-word;
+}
+
+.chat-container .chat-close:hover {
+    cursor: pointer;
+    color: #5e0000;
+}
+
+.chat-container .chat-input {
+    /* Put at the bottom */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+
+}
+
+.chat-container .chat-input input {
+    width: 80%;
+    height: 80%;
+    margin-left: 5%;
+    margin-top: 1.5%;
+    border: none;
+    border-radius: 5px;
+    padding-left: 1%;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+.chat-container .chat-input input:focus {
+    outline: none;
+}
+
+.chat-container .chat-input button {
+    width: 10%;
+    height: 80%;
+    margin-left: 1%;
+    margin-top: 1.5%;
+    border: none;
+    border-radius: 5px;
+    background-color: #006000;
+    color: #fff;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+    .chat-container {
+        width: 30%;
+        height: 80%;
+        right: 1vw;
+        border-radius: 10px;
+        padding: 2px;
+    }
+}

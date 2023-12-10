@@ -1,0 +1,290 @@
+[
+  {
+    "name": "Example",
+    "imageSrc": "/images/menu/huevos.png",
+    "category": "Platos/Desayuno",
+    "description": "¡Descubre la perfección en cada bocado!\n\n",
+    "options": [
+      "Option 0 ",
+      "Option 1",
+      "Option 2"
+    ],
+    "id": 0
+  },
+  {
+    "name": "Huevos al gusto",
+    "imageSrc": "/images/menu/huevos.png",
+    "category": "Platos/Desayuno",
+    "description": "¡Descubre la perfección en cada bocado con nuestros huevos a tu manera!\n\n",
+    "options": [
+      "de Chorizo",
+      "de Jam\u00f3n",
+      "A la Mexicana"
+    ],
+    "id": 1
+  },
+  {
+    "name": "Omelette",
+    "imageSrc": "/images/menu/omelette.png",
+    "category": "Platos/Desayuno",
+    "description": null,
+    "options": [
+      "de Chorizo",
+      "de Jam\u00f3n",
+      "A la Mexicana"
+    ],
+    "id": 2
+  },
+  {
+    "name": "Molcajetada de huevo",
+    "imageSrc": "/images/menu/molcajetada-huevo.png",
+    "category": "Platos/Desayuno",
+    "description": null,
+    "id": 3
+  },
+  {
+    "name": "Chilaquiles",
+    "imageSrc": "/images/menu/chilaquiles.png",
+    "category": "Platos/Desayuno",
+    "description": null,
+    "options": [
+      "con Huevos",
+      "con Tasajo"
+    ],
+    "id": 4
+  },
+  {
+    "name": "Enfrijoladas",
+    "imageSrc": "/images/menu/enfrijoladas.png",
+    "category": "Platos/Desayuno",
+    "description": null,
+    "options": [
+      "con Huevos",
+      "con Tasajo"
+    ],
+    "id": 5
+  },
+  {
+    "name": "Entomatadas",
+    "imageSrc": "/images/menu/entomatadas.png",
+    "category": "Platos/Desayuno",
+    "description": null,
+    "options": [
+      "con Huevos",
+      "con Tasajo"
+    ],
+    "id": 6
+  },
+  {
+    "name": "Enmoladas",
+    "imageSrc": "/images/menu/enmoladas.png",
+    "category": "Platos/Desayuno",
+    "description": null,
+    "options": [
+      "con Pollo",
+      "con Tasajo"
+    ],
+    "id": 7
+  },
+  {
+    "name": "Enchiladas",
+    "imageSrc": "/images/menu/enchiladas.png",
+    "category": "Platos/Desayuno",
+    "description": null,
+    "options": [
+      "con Huevos",
+      "con Tasajo"
+    ],
+    "id": 8
+  },
+  {
+    "name": "Memelitas",
+    "imageSrc": "/images/menu/memelas.png",
+    "category": "Snacks",
+    "description": null,
+    "options": [
+      "de Queso",
+      "de Quesillo",
+      "de Champi\u00f1on & quesillo",
+      "de Chicarr\u00f3n"
+    ],
+    "id": 9
+  },
+  {
+    "name": "Empanadas",
+    "imageSrc": "/images/menu/empadas.png",
+    "category": "Snacks",
+    "description": null,
+    "options": [
+      "de Amarillo de pollo",
+      "de Choriqueso",
+      "de Champi\u00f1on & quesillo"
+    ],
+    "id": 10
+  },
+  {
+    "name": "Caldo de fandango",
+    "imageSrc": "/images/menu/caldo-fandango.png",
+    "category": "Snacks",
+    "description": null,
+    "id": 11
+  },
+  {
+    "name": "Molcajetada de chorizo",
+    "imageSrc": "/images/menu/molcajetada-chorizo.png",
+    "category": "Platos/Fuerte",
+    "description": null,
+    "id": 12
+  },
+  {
+    "name": "Mole de pollo",
+    "imageSrc": "/images/menu/pollo-con-mole.png",
+    "category": "Platos/Fuerte",
+    "description": null,
+    "id": 13
+  },
+  {
+    "name": "Tasajo a la mexicana",
+    "imageSrc": "/images/menu/tasajo-amc.png",
+    "category": "Platos/Fuerte",
+    "description": null,
+    "id": 14
+  },
+  {
+    "name": "Tasajo encebollado",
+    "imageSrc": "/images/menu/tasajo-cb.png",
+    "category": "Platos/Fuerte",
+    "description": null,
+    "id": 15
+  },
+  {
+    "name": "Pechuga de pollo",
+    "imageSrc": "/images/menu/pechuga-de-perro.jpeg",
+    "category": "Platos/Fuerte",
+    "description": null,
+    "id": 16
+  },
+  {
+    "name": "Caf\u00e9 de olla",
+    "imageSrc": "/images/menu/cafeol.png",
+    "category": "Bebidas/Caliente",
+    "description": null,
+    "id": 17
+  },
+  {
+    "name": "Caf\u00e9 con leche",
+    "imageSrc": "/images/menu/cafe-leche.png",
+    "category": "Bebidas/Caliente",
+    "description": null,
+    "id": 18
+  },
+  {
+    "name": "Chocolate de agua",
+    "imageSrc": "/images/menu/chocolate.png",
+    "category": "Bebidas/Caliente",
+    "description": null,
+    "id": 19
+  },
+  {
+    "name": "Chocolate de leche",
+    "imageSrc": "/images/menu/chocolate-lech.png",
+    "category": "Bebidas/Caliente",
+    "description": null,
+    "id": 20
+  },
+  {
+    "name": "T\u00e9",
+    "imageSrc": "/images/menu/tea.png",
+    "category": "Bebidas/Caliente",
+    "description": null,
+    "id": 21
+  },
+  {
+    "name": "Agua p/nescaf\u00e9",
+    "imageSrc": "/images/menu/agua-jot.png",
+    "category": "Bebidas/Caliente",
+    "description": null,
+    "id": 22
+  },
+  {
+    "name": "Leche p/nescaf\u00e9",
+    "imageSrc": "/images/menu/leche-hot.png",
+    "category": "Bebidas/Caliente",
+    "description": null,
+    "id": 23
+  },
+  {
+    "name": "Atole",
+    "imageSrc": "/images/menu/atole.png",
+    "category": "Bebidas/Caliente",
+    "description": null,
+    "id": 24
+  },
+  {
+    "name": "Refrescos",
+    "imageSrc": "/images/menu/refrescos.png",
+    "category": "Bebidas/Frio",
+    "description": null,
+    "options": [
+      "Coca-Cola",
+      "Manzanita",
+      "Mirinda",
+      "Jarritos: pi\u00f1a/tutifruti/pepsi/7up"
+    ],
+    "id": 25
+  },
+  {
+    "name": "Agua de fruta",
+    "imageSrc": "/images/menu/agua-fruta.png",
+    "category": "Bebidas/Frio",
+    "description": null,
+    "options": [
+      "Vaso",
+      "Jarra"
+    ],
+    "id": 26
+  },
+  {
+    "name": "Licuados",
+    "imageSrc": "/images/menu/licuados.png",
+    "category": "Bebidas/Frio",
+    "description": null,
+    "options": [
+      "Fresa",
+      "Pl\u00e1tano",
+      "Papaya",
+      "Mango",
+      "Chocomilk"
+    ],
+    "id": 27
+  },
+  {
+    "name": "Micheladas",
+    "imageSrc": "/images/menu/micheladas.png",
+    "category": "Bebidas/Frio",
+    "description": null,
+    "options": [
+      "Cl\u00e1sica",
+      "Chamoy",
+      "Tamarindo",
+      "Mango",
+      "Fresa",
+      "Maracuya"
+    ],
+    "id": 28
+  },
+  {
+    "name": "Mezcal",
+    "imageSrc": "/images/menu/mezcal.png",
+    "category": "Bebidas/Frio",
+    "description": null,
+    "options": [
+      "Tepeztate",
+      "Espad\u00edn",
+      "Arroque\u00f1o",
+      "Tobala",
+      "Jabal\u00ed"
+    ],
+    "id": 29
+  }
+]

@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik+Bubbles");
+
+
+.branches-list{
+    width: 100vw;
+    height: 80vh;
+    margin-top: 10vh;
+    position: absolute;
+    text-align: center;
+}
+
+
+.branch-detail {
+    background-color: #8a8a8a;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 80vw;
+    margin-bottom: 5vh;
+    margin-left: 5vw;
+}
+
+.branch-detail > p{
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.branch-detail > h3 {
+    font-family: 'Rubik Bubbles', sans-serif;
+    font-size: 1em;
+}
+
+.branch-detail > button{
+    background-color: #bdbdbd;
+    margin-top: 1vh;
+    color: white;
+    border: 0;
+    padding: 8px;
+    border-radius: 15px;
+}

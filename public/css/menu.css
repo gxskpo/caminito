@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Glass+Antiqua');
+@import url("https://fonts.googleapis.com/css?family=Agbalumo");
+@import url("https://fonts.googleapis.com/css?family=Afacad");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+.menu-main {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-main > p {
+    margin-top: 8vh;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.menu-main > .menu-section {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-flow: column;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: scroll;
+    background-color: transparent;
+    height: 25vh;
+}
+
+.menu-main > h1 {
+    font-family: "Varela Round", sans-serif;
+}
+
+.menu-main > p {
+    text-align: center;
+}
+
+
+.deals-section > .menu-object-cl {
+    background-color: rgba(250, 163, 0, 0.85);
+}
+
+.menu-object-cl {
+    margin-top: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    height: 23vh;
+    width: 35vw;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(100, 100, 100, 0.85);
+}
+
+.menu-object-cl > img {
+    width: 33vw;
+    max-height: 11.5vh;
+    margin-top: 1vw;
+    border-radius: 5px 5px 0 0;
+}
+
+.menu-object-cl > h3 {
+    font-family: 'Glass Antiqua', sans-serif;
+}
+
+.menu-object-cl > p {
+    font-family: "Merriweather", sans-serif;
+}
+
+.old-price {
+    background-clip: text;
+    color: #ad5f5f;
+    text-decoration-line: line-through;
+}
+
+.ai-chat-btn {
+    background-color: #2a2a2a;
+    color: white;
+    position: fixed;
+    right: 5vw;
+    font-size: 1.2em;
+    padding: 18px;
+    border-radius: 50%;
+    border: none;
+    bottom: 5vh;
+    transition-duration: .2s;
+}
+
+.ai-chat-btn:active {
+    background-color: #181818FF;
+}
+
+@media only screen and (min-width: 768px) {
+    .menu-main > .menu-section {
+    }
+
+    .menu-object-cl {
+        margin-top: 1vh;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        height: 23vh;
+        width: 15vw;
+        border-radius: 5px;
+        text-align: center;
+        background-color: rgba(100, 100, 100, 0.85);
+    }
+
+    .menu-object-cl > img {
+        width: 14.5vw;
+        overflow: hidden;
+        max-height: 11.5vh;
+        margin-top: 1vw;
+        border-radius: 5px 5px 0 0;
+    }
+}
+
+
+
+.menu-detail-container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 999999;
+}
+
+.menu-detail-container .menu-item-detail{
+    width: 96vw;
+    margin-left: 2vw;
+    height: 80vh;
+    margin-top: 10vh;
+    background-color: #fff;
+    position: relative;
+    z-index: 101;
+    overflow-y: scroll;
+    border-radius: 15px;
+}
+
+.menu-detail-container .menu-detail-close {
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+    font-size: 10vw;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+}
+
+.menu-detail-container .menu-item-dimg {
+    /* Width: 25vh, image must be crop to fit */
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+}
+.menu-detail-container h1   {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    margin-bottom: 1vh;
+    font-family: 'Agbalumo', sans-serif;
+}
+
+.menu-detail-container p {
+    /* This is the description of the menu */
+    font-size: 1.25em;
+    margin: 0;
+    padding: 0;
+    margin-left: 1vw;
+    margin-bottom: 1vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.menu-detail-container h3 {
+    /* This is the title of "options" */
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    margin-left: 1vw;
+    margin-bottom: 1vh;
+    font-family: 'Afacad', sans-serif;
+}
+
+.menu-detail-container ul {
+    /* This is the list of options */
+    margin: 0;
+    padding: 0;
+    margin-left: 1vw;
+    margin-bottom: 1vh;
+    font-family: 'Raleway', sans-serif;
+    list-style-position: inside;
+}
+
+.menu-detail-container ul li {
+    /* This is the list of options */
+    margin: 0;
+    padding: 0;
+    margin-left: 1vw;
+    margin-bottom: 1vh;
+    font-family: 'Raleway', sans-serif;
+    list-style-position: inside;
+}
+
+@media only screen and (min-width: 768px){
+    .menu-detail-container .menu-item-detail{
+        width: 30vw;
+        margin-left: 69vw;
+    }
+
+    .menu-detail-container .menu-detail-close {
+        font-size: 3vw;
+    }
+}

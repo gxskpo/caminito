@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Source Code Pro');
+
+.about-us {
+    width: 100vw;
+    height: 50vh;
+    top: 10vh;
+    text-align: center;
+    position: relative;
+
+}
+
+.about-website {
+    width: 100vw;
+    height: 50vh;
+    text-align: center;
+    position: relative;
+}
+
+.about-us > h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-us > p {
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-website > h1 {
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-website > p {
+    padding: 15px;
+    font-family: 'Source Code Pro', sans-serif;
+}
