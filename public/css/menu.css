@@ -5,6 +5,8 @@
 @import url("https://fonts.googleapis.com/css?family=Agbalumo");
 @import url("https://fonts.googleapis.com/css?family=Afacad");
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url('https://fonts.googleapis.com/css?family=Rethink Sans');
+
 
 .menu-main {
     display: block;
@@ -116,19 +118,18 @@
 }
 
 
-
-.menu-detail-container{
+.menu-detail-container {
     width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     display: none;
     z-index: 999999;
 }
 
-.menu-detail-container .menu-item-detail{
+.menu-detail-container .menu-item-detail {
     width: 96vw;
     margin-left: 2vw;
     height: 80vh;
@@ -160,7 +161,8 @@
     height: 25vh;
     object-fit: cover;
 }
-.menu-detail-container h1   {
+
+.menu-detail-container h1 {
     font-size: 2em;
     margin: 0;
     padding: 0;
@@ -210,13 +212,212 @@
     list-style-position: inside;
 }
 
-@media only screen and (min-width: 768px){
-    .menu-detail-container .menu-item-detail{
+@media only screen and (min-width: 768px) {
+    .menu-detail-container .menu-item-detail {
         width: 30vw;
         margin-left: 69vw;
     }
 
     .menu-detail-container .menu-detail-close {
         font-size: 3vw;
+    }
+}
+
+
+.chat-container-bk {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    display: none;
+    overflow: hidden;
+    z-index: 9999999999;
+}
+
+.chat-container {
+    width: 96%;
+    margin-left: 2vw;
+    top: 9%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: fixed;
+}
+
+.chat-container .chat-header {
+    width: 100%;
+    height: 10%;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+.chat-container .chat-header a {
+    text-decoration: none;
+    color: #8c6289;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.chat-container .chat-header a:hover {
+    color: #644562;
+}
+
+.chat-container .chat-close {
+    position: absolute;
+    right: 1vw;
+    top: 1vh;
+    font-size: 2em;
+    border: none;
+    background-color: inherit;
+}
+
+.chat-container .chat-messages {
+    width: 100%;
+    height: 80%;
+    background-color: #fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.chat-container .chat-messages .chat-message {
+    width: 100%;
+    min-height: 15%;
+    height: auto;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+.chat-container .chat-messages .chat-message.has-embed {
+    min-height: 50%;
+}
+
+
+.chat-container .chat-messages .chat-message .chat-message-sender {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    font-size: 0.7em;
+    color: #006000;
+    font-weight: bold;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.chat-container .chat-messages .chat-message .menu-message-embed {
+    position: relative;
+    width: 70%;
+    height: 80%;
+    bottom: 0;
+    font-size: 1em;
+    color: #000;
+
+}
+
+.chat-container .chat-messages .chat-message .menu-message-embed img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.chat-container .chat-messages .chat-message .menu-message-embed .menu-message-embed-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 22%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 0.85em;
+    padding-left: 0;
+    border-radius: 0 0 15px 15px;
+}
+
+.chat-container .chat-messages .chat-message .chat-message-content {
+    position: relative;
+    left: 0;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    color: #000;
+    padding-left: 1%;
+    padding-top: 1%;
+    word-wrap: break-word;
+}
+
+.chat-container .chat-close:hover {
+    cursor: pointer;
+    color: #5e0000;
+}
+
+.chat-container .chat-input {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+
+}
+
+.chat-container .chat-input input {
+    width: 80%;
+    height: 80%;
+    margin-left: 5%;
+    margin-top: 1.5%;
+    border: none;
+    border-radius: 5px;
+    padding-left: 1%;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+.chat-container .chat-input input::placeholder {
+    color: #ccc;
+}
+
+.chat-container .chat-input input:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+.chat-container .chat-input input:focus {
+    outline: none;
+}
+
+.chat-container .chat-input button {
+    width: 10%;
+    height: 80%;
+    margin-left: 1%;
+    margin-top: 1.5%;
+    border: none;
+    border-radius: 5px;
+    background-color: #006000;
+    color: #fff;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+.chat-container .chat-input button:disabled {
+    background-color: #ccc;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+@media only screen and (min-width: 768px) {
+    .chat-container {
+        width: 30%;
+        height: 80%;
+        right: 1vw;
+        border-radius: 10px;
+        padding: 2px;
     }
 }

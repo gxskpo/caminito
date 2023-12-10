@@ -17,7 +17,6 @@ function MenuEmbed({cID, setItem}) {
         }
     };
 
-    const itemID = initialItemRef.current.id;
     const itemName = initialItemRef.current.name;
     const itemImageSrc = initialItemRef.current.imageSrc;
 
@@ -53,7 +52,7 @@ function ChatMessage({content, sender, time, setIDfn}) {
     } else {
         clean_content = content;
     }
-
+    clean_content = clean_content.replace(itemRegex, '');
 
     return (
         <div className={`chat-message ${embeds && embeds.length > 0 ? 'has-embed' : ''}`} id={message_id}>
@@ -69,6 +68,23 @@ export default function ChatAssistant({setIDfn}) {
     const [messages, setMessages] = useState([]);
     const json_messages = [];
 
+    const disableInputs = () => {
+        document.querySelector(".chat-input input").disabled = true;
+        let button = document.querySelector(".chat-input button");
+        button.disabled = true;
+        button.innerHTML = '<i class="fa-solid fa-ellipsis fa-beat-fade"></i>';
+    }
+
+    const enableInputs = () => {
+        let textInput = document.querySelector(".chat-input input");
+        textInput.disabled = false;
+        textInput.focus();
+        let button = document.querySelector(".chat-input button");
+        button.disabled = false;
+        button.innerHTML = '<i class="fa-solid fa-paper-plane"></i>';
+    }
+
+
     const submitMessage = async (message) => {
         console.log(messages)
         console.log(json_messages)
@@ -78,7 +94,7 @@ export default function ChatAssistant({setIDfn}) {
         });
         setMessages((prevMessages) => [
             ...prevMessages,
-            <ChatMessage content={message} sender="user" time={Date.now()} setIDfn={setIDfn} />,
+            <ChatMessage content={message} sender="user" time={Date.now()} setIDfn={setIDfn}/>,
         ]);
 
         const response = await fetch("/api/chat", {
@@ -95,12 +111,16 @@ export default function ChatAssistant({setIDfn}) {
                 'content': responseData.data.choices[0].message.content
             });
             setMessages((prevMessages) => [...prevMessages, (
-                <ChatMessage content={responseData.data.choices[0].message.content} sender="chatGPT"
+                <ChatMessage content={responseData.data.choices[0].message.content} sender="Nero"
                              time={Date.now()} setIDfn={setIDfn}/>)])
+            enableInputs();
+            setTimeout(() => {
+                const chatMessages = document.querySelector(".chat-messages");
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }, 0);
         } else {
             console.error("Error en la solicitud HTTP:", response.statusText);
         }
-
     }
 
     const closeChat = () => {
@@ -110,6 +130,7 @@ export default function ChatAssistant({setIDfn}) {
 
     const onInput = async (event) => {
         if (event.key === "Enter" && event.target.value !== "") {
+            disableInputs();
             await submitMessage(event.target.value);
             event.target.value = "";
         }
@@ -118,6 +139,7 @@ export default function ChatAssistant({setIDfn}) {
     const onSend = async () => {
         let input = document.querySelector(".chat-input input");
         if (input.value === "") return;
+        disableInputs();
         await submitMessage(input.value);
         input.value = "";
     }
@@ -128,7 +150,7 @@ export default function ChatAssistant({setIDfn}) {
             <div className="chat-container">
                 <div className="chat-header">
                     <h1>Chat</h1>
-                    <p>Powered by AI</p>
+                    <p>Powered by <a href="https://github.com/gxskpo/caminito">ChatGPT</a></p>
                 </div>
                 <button className="chat-close" onClick={closeChat}><i className="fa-regular fa-circle-xmark"></i>
                 </button>
@@ -136,9 +158,7 @@ export default function ChatAssistant({setIDfn}) {
                     {messages ? messages : null}
                 </div>
                 <div className="chat-input">
-                    {/* Need to change onKeyPress because is deprecated*/}
-                    <input type="text" placeholder="Type something here..."  onKeyUp={onInput}/>
-
+                    <input type="text" placeholder="Type something here..." onKeyUp={onInput}/>
                     <button onClick={onSend}><i className="fa-solid fa-paper-plane"></i></button>
                 </div>
             </div>

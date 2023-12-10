@@ -13,7 +13,7 @@ const texts = {
             },
             branches: {
                 "es": "Sucursales",
-                "en": "Branches",
+                "en": "Locations",
                 "de": "Filialen",
             },
             menu: {

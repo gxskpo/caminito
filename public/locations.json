@@ -1,0 +1,28 @@
+[
+  {
+    "address": "Carretera Internacional Km 30, Col. 12 de mayo, Tlacolula, Oaxaca",
+    "schedules": {
+      "monday": "8:00-17:00",
+      "tuesday": "8:00-17:00",
+      "wednesday": "8:00-17:00",
+      "thursday": "8:00-17:00",
+      "friday": "8:00-17:00",
+      "saturday": "8:00-17:00",
+      "sunday": "8:00-17:00"
+    },
+    "google_maps_link": "https://maps.app.goo.gl/XFTWx6qhNEyQ4RVA9"
+  },
+  {
+    "address": "Av. Juarez s/n, frente al centro de salud, Teotitlán del Valle, Tlacolula, Oax.",
+    "schedules": {
+      "monday": "8:00-17:00",
+      "tuesday": "8:00-17:00",
+      "wednesday": "8:00-17:00",
+      "thursday": "8:00-17:00",
+      "friday": "8:00-17:00",
+      "saturday": "8:00-17:00",
+      "sunday": "8:00-17:00"
+    },
+    "google_maps_link": "https://www.google.com/maps/place/Restaurant+El+Arte+Teotiteco"
+  }
+]

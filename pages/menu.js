@@ -8,6 +8,7 @@ import MenuObject from "@/components/menu/menu-object";
 import {useEffect, useState} from "react";
 import P from "@/components/p";
 import {MenuDetail, openDetail} from '@/components/menu/detail'
+import ChatAssistant from "@/components/menu/chat";
 
 
 export default function MenuHome() {
@@ -42,6 +43,7 @@ export default function MenuHome() {
             <P/>
             <TopBar currentPage="menu"/>
             <MenuDetail cID={cID}/>
+            <ChatAssistant setIDfn={setID}/>
             <div className="menu-main">
                 <p>{texts.Menu.currencyNotificationText[currentLang]}</p>
                 <h1>{texts.Menu.breakfastsSection.title[currentLang]}</h1>
@@ -92,7 +94,9 @@ export default function MenuHome() {
                 <div className="menu-section" style={{
                     height: "10vh"
                 }}/>
-                <button className="ai-chat-btn"><i className="fa-solid fa-comment"></i></button>
+                <button className="ai-chat-btn" onClick={() => {
+                    document.querySelector(".chat-container-bk").style.display = "flex";
+                }}><i className="fa-solid fa-comment"></i></button>
             </div>
         </>
     )

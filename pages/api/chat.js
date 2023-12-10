@@ -1,5 +1,4 @@
 import menu from '@/public/menu.json';
-
 export default async function chatHandler(req, res) {
     let content_type = req.headers["Content-Type"] ?? req.headers["content-type"] ?? null;
 
@@ -29,6 +28,10 @@ export default async function chatHandler(req, res) {
         })
     } else {
         const apiKey = process.env.OPENAI_API_KEY;
+        const clear_menu = menu.map(item => {
+            const { description, ...rest } = item;
+            return rest;
+        });
 
         let messages = []
         messages.push(
@@ -36,14 +39,11 @@ export default async function chatHandler(req, res) {
                 'role': 'system',
                 'content': `Eres una IA que ayuda en un restaurante, debe recomendar platillos, y ser servicial, no debe responder a preguntas no relacionadas al restaurante, cuando algun usuario solicite una reomendación o información de un platillo deberá responder con 
 [item:<item_id>] SIEMPRE, recuerda SIEMPRE dejar un espacio después de que se cierran los corchetes.
-MENU a continuación(JSON): ${JSON.stringify(menu)}`
+MENU a continuación(JSON): ${JSON.stringify(clear_menu)}.`
             }
         );
 
         messages.push(...req.body.messages);
-        //wite a script to stream chat completion from chatGPT (https://api.openai.com/v1/chat/completions), and then relay the stream to requester
-        // this thing should be able to handle multiple requests at the same time and work with Netifly
-        // it should also be able to handle multiple chatGPT instances at the same time
         let response = await fetch('https://api.openai.com/v1/chat/completions', {
             method: 'POST',
             headers: {
