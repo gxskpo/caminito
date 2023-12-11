@@ -2,34 +2,32 @@ import Head from "next/head";
 import {useRouter} from "next/router";
 import languageProvider from "@/components/language";
 import TopBar from "@/components/topbar";
-import P from "@/components/p";
+import texts from "@/components/texts";
+import LoadCSS from "@/components/css-loader";
+import {Loader} from "@/components/loader";
 
 export default function About() {
     const router = useRouter();
-    const {currentLang, setLang} = languageProvider();
-
+    const {currentLang, xSetLang} = languageProvider();
+    LoadCSS("/css/about.css")
     return (
         <>
             <Head>
-                <title>Menú</title>
-                <link rel="stylesheet" href="/css/about.css"/>
+                <title>{texts.AboutUs.title[currentLang]}</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
             </Head>
-            <P/>
-            <TopBar currentPage="about"/>
+            <Loader/>
+            <TopBar currentPage="about" currentLang={currentLang} xSetLang={xSetLang}/>
             <div className="about-us">
-                <h1>Acerca de nosotros</h1>
-                <p>Nosotros somos una familia de emprendedores en el negocio restaurantero para dar a conocer el sazón
-                    hogareño, ofrecemos una experiencia degustativa inigualable de platillos tradicionales del valle de
-                    Oaxaca, con el sazón de la familia.</p>
+                <h1>{texts.AboutUs.aboutCommerce.h1[currentLang]}</h1>
+                <p>{texts.AboutUs.aboutCommerce.description[currentLang]}</p>
             </div>
             <div className="about-website">
-                <h1>Acerca de esta página web</h1>
-                <p>
-                    Hola aquí! Esta página web fue creada con Next.js, y ¡es de código abierto! Puedes ver el código
-                    presionando el botón abajo, esta página web fue creada como un proyecto para la clase de Informática.
-                </p>
-                <button>Source code</button>
-
+                <h1>{texts.AboutUs.aboutDeveloper.h1[currentLang]}</h1>
+                <p>{texts.AboutUs.aboutDeveloper.description[currentLang]}</p>
+                <button className="source-code" onClick={() => {
+                    router.push("https://github.com/gxskpo/caminito")
+                }}><i className="fa-brands fa-github"></i> {texts.AboutUs.aboutDeveloper.sourceCodeButton[currentLang]}</button>
             </div>
             <div style={{height: "20vh"}}/>
         </>

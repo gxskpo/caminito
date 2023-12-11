@@ -1,4 +1,3 @@
-import {useState} from 'react';
 import menu from '@/public/menu.json';
 
 export function openDetail({cID, setIDFn}) {
@@ -6,7 +5,9 @@ export function openDetail({cID, setIDFn}) {
     document.querySelector("#mdj3").style.display = "flex";
 }
 
-export function MenuDetail({cID}) {
+export function MenuDetail({cID, currentLang}) {
+
+
     const closeDetail = () => {
         document.querySelector("#mdj3").style.display = "none";
     }
@@ -18,7 +19,7 @@ export function MenuDetail({cID}) {
                 <button className="menu-detail-close" onClick={closeDetail}><i
                     className="fa-regular fa-circle-xmark"></i></button>
                 <h1>{menu[cID].name}</h1>
-                <p>{menu[cID].description}</p>
+                <p>{menu[cID].description[currentLang]}</p>
 
                 { menu[cID].options ? <h3>Opciones:</h3>  : null }
                 <ul>

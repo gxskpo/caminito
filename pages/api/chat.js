@@ -1,4 +1,4 @@
-import menu from '@/public/menu.json';
+import menu from '@/public/menu-mini.json';
 export default async function chatHandler(req, res) {
     let content_type = req.headers["Content-Type"] ?? req.headers["content-type"] ?? null;
 

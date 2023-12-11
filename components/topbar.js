@@ -1,10 +1,10 @@
 import texts from "@/components/texts";
-import languageProvider from "@/components/language";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import {useRouter} from "next/router";
 
-export default function TopBar({currentPage}) {
-    const {currentLang, xSetLang} = languageProvider();
+export default function TopBar({currentPage, currentLang, xSetLang}) {
+    const [selectedLang, setSelectedLang] = useState("");
+    let timesUserPressedCurrentPage = 0
     const router = useRouter();
     const whatsapp_url = process.env.NEXT_PUBLIC_WHATSAPP_URL;
 
@@ -22,15 +22,32 @@ export default function TopBar({currentPage}) {
         }
     }
 
+    const handleCurrentPageClick = () => {
+        timesUserPressedCurrentPage++
+        if (timesUserPressedCurrentPage >= 5) {
+            alert("Where are you trying to go? -_-")
+        }
+        console.log(timesUserPressedCurrentPage)
+        toggleMenu();
+    }
+
     useEffect(() => {
         let currentPageElement = document.querySelector(`#tpb_${currentPage}`)
         currentPageElement.classList.add("current-page");
-        currentPageElement.onclick = () => {};
+        currentPageElement.addEventListener("click", handleCurrentPageClick)
+        return () => {
+            currentPageElement.removeEventListener("click", handleCurrentPageClick)
+            currentPageElement.classList.remove("current-page");
+        }
+    }, [currentPage]);
 
-
-    }, []);
+    useEffect(() => {
+        setSelectedLang(currentLang)
+        console.log(currentLang)
+    }, [currentLang]);
 
     const handleSetLang = (e) => {
+        toggleMenu();
         let value = e.target.value;
         xSetLang(value)
     }
@@ -64,11 +81,10 @@ export default function TopBar({currentPage}) {
                     }}><i className="fa-brands fa-whatsapp"></i> Whatsapp
                     </button>
 
-                    <select defaultValue={currentLang} onChange={handleSetLang}>
+                    <select onChange={handleSetLang} id="tpb_lang" value={selectedLang}>
                         <option value="es">🇲🇽Español</option>
-                        <option value="en">🇺🇸Inglés</option>
+                        <option value="en">🇺🇸English</option>
                         <option value="de">🇩🇪Deutsch</option>
-
                     </select>
 
                     <button onClick={() => {

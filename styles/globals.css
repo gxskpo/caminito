@@ -140,10 +140,21 @@ html {
 
     .menu-buttons {
         width: 29vw;
-        border-radius: 0 0 15px 15px;
     }
 
-    .menu-buttons > .current-page{
+    .menu-buttons > button {
+        border-radius: 15px;
+    }
+
+    .menu-buttons > .current-page {
+        border-radius: 15px;
+    }
+
+    .whatsapp-btn {
+        border-radius: 15px;
+    }
+
+    .menu-buttons > select {
         border-radius: 15px;
     }
 }

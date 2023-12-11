@@ -1,21 +1,25 @@
 [
   {
-    "name": "Example",
-    "imageSrc": "/images/menu/huevos.png",
-    "category": "Platos/Desayuno",
-    "description": "¡Descubre la perfección en cada bocado!\n\n",
-    "options": [
-      "Option 0 ",
-      "Option 1",
-      "Option 2"
-    ],
+    "name": "0",
+    "imageSrc": null,
+    "category": null,
+    "description": {
+      "es": "0",
+      "en": "0",
+      "de": "0"
+    },
+    "options": null,
     "id": 0
   },
   {
     "name": "Huevos al gusto",
     "imageSrc": "/images/menu/huevos.png",
     "category": "Platos/Desayuno",
-    "description": "¡Descubre la perfección en cada bocado con nuestros huevos a tu manera!\n\n",
+    "description": {
+      "es": "¡Descubre la perfección en cada bocado con nuestros huevos a tu manera!",
+      "en": "Discover perfection in every bite with our eggs your way!",
+      "de": "Entdecken Sie die Perfektion in jedem Bissen mit unseren Eiern nach Ihrem Geschmack!"
+    },
     "options": [
       "de Chorizo",
       "de Jam\u00f3n",
@@ -27,7 +31,11 @@
     "name": "Omelette",
     "imageSrc": "/images/menu/omelette.png",
     "category": "Platos/Desayuno",
-    "description": null,
+    "description": {
+      "es": "Deléitate con nuestro exquisito manjar: una creación irresistible de huevos batidos, cuidadosamente cocidos en una sartén para lograr la perfección.",
+      "en": "Indulge in our exquisite delight: an irresistible creation of whisked eggs, meticulously cooked in a pan to achieve perfection.",
+      "de": "Genießen Sie unser exquisites Festmahl: eine unwiderstehliche Kreation aus verquirlten Eiern, sorgfältig in einer Pfanne zubereitet, um die Perfektion zu erreichen."
+    },
     "options": [
       "de Chorizo",
       "de Jam\u00f3n",
@@ -39,14 +47,22 @@
     "name": "Molcajetada de huevo",
     "imageSrc": "/images/menu/molcajetada-huevo.png",
     "category": "Platos/Desayuno",
-    "description": null,
+    "description": {
+      "es": "Sumérgete en una experiencia culinaria única con nuestra innovadora preparación, donde los huevos son cuidadosamente cocinados en un auténtico molcajete. Este proceso artesanal resalta los sabores naturales, creando un plato que fusiona la tradición con el deleite moderno.",
+      "en": "Immerse yourself in a unique culinary experience with our innovative preparation, where eggs are carefully cooked in an authentic mortar. This artisanal process accentuates natural flavors, creating a dish that merges tradition with modern delight.",
+      "de": "Tauchen Sie ein in eine einzigartige kulinarische Erfahrung mit unserer innovativen Zubereitung, bei der Eier sorgfältig in einem authentischen Mörser gekocht werden. Dieser handwerkliche Prozess betont natürliche Aromen und schafft ein Gericht, das Tradition mit modernem Genuss vereint."
+    },
     "id": 3
   },
   {
     "name": "Chilaquiles",
     "imageSrc": "/images/menu/chilaquiles.png",
     "category": "Platos/Desayuno",
-    "description": null,
+    "description": {
+      "es": "Sumérgete en un festín de sabores con nuestros irresistibles trozos de tortilla frita, bañados en tu elección de salsa (verde, roja o mole). Este manjar se sirve con generosas porciones de crema, queso fresco y cebolla fresca, creando una experiencia culinaria que deleitará tu paladar con cada bocado.",
+      "en": "Immerse yourself in a flavor feast with our irresistible crispy tortilla bites, drenched in your choice of sauce (green, red, or mole). This delicacy is served with generous portions of cream, fresh cheese, and crisp onions, creating a culinary experience that will delight your taste buds with every bite.",
+      "de": "Tauche ein in ein Fest der Aromen mit unseren unwiderstehlichen knusprigen Tortillastücken, getränkt in deiner Wahl von Sauce (grün, rot oder Mole). Dieser Leckerbissen wird mit großzügigen Portionen Sahne, frischem Käse und knuspriger Zwiebel serviert und schafft so ein kulinarisches Erlebnis, das deinen Gaumen mit jedem Bissen begeistern wird."
+    },
     "options": [
       "con Huevos",
       "con Tasajo"
@@ -57,7 +73,11 @@
     "name": "Enfrijoladas",
     "imageSrc": "/images/menu/enfrijoladas.png",
     "category": "Platos/Desayuno",
-    "description": null,
+    "description": {
+      "es": "Descubre la exquisitez de nuestras Enfrijoladas, donde las suaves tortillas se sumergen en frijoles que despiertan tus sentidos. Cada bocado es una sinfonía de sabores.",
+      "en": "Discover the delicacy of our Enfrijoladas, where soft tortillas are immersed in beans that awaken your senses. Each bite is a symphony of flavors.",
+      "de": "Entdecken Sie die Köstlichkeit unserer Enfrijoladas, bei denen weiche Tortillas in Bohnen getaucht werden, die Ihre Sinne wecken. Jeder Bissen ist eine Symphonie der Aromen."
+    },
     "options": [
       "con Huevos",
       "con Tasajo"
@@ -68,7 +88,11 @@
     "name": "Entomatadas",
     "imageSrc": "/images/menu/entomatadas.png",
     "category": "Platos/Desayuno",
-    "description": null,
+    "description": {
+      "es": "Sumérgete en la exquisita experiencia de nuestras Entomatadas, donde las tortillas ligeras se bañan en una irresistible salsa de tomate. Cada bocado es una explosión de sabores.",
+      "en": "Immerse yourself in the exquisite experience of our Entomatadas, where light tortillas are bathed in an irresistible tomato sauce. Each bite is an explosion of flavors.",
+      "de": "Tauche ein in das exquisit Erlebnis unserer Entomatadas, bei dem leichte Tortillas in einer unwiderstehlichen Tomatensauce gebadet werden. Jeder Bissen ist eine Explosion von Aromen."
+    },
     "options": [
       "con Huevos",
       "con Tasajo"
@@ -79,7 +103,11 @@
     "name": "Enmoladas",
     "imageSrc": "/images/menu/enmoladas.png",
     "category": "Platos/Desayuno",
-    "description": null,
+    "description": {
+      "es": "Descubre la magia culinaria con nuestras Enmoladas, donde las suaves tortillas se envuelven en una tradicional salsa de mole. Cada bocado es un viaje de sabores cautivadores.",
+      "en": "Discover the culinary magic with our Enmoladas, where soft tortillas are wrapped in a traditional mole sauce. Each bite is a journey of captivating flavors.",
+      "de": "Entdecken Sie die kulinarische Magie unserer Enmoladas, bei denen weiche Tortillas in einer traditionellen Mole-Sauce eingewickelt sind. Jeder Bissen ist eine Reise durch fesselnde Aromen."
+    },
     "options": [
       "con Pollo",
       "con Tasajo"
@@ -90,7 +118,11 @@
     "name": "Enchiladas",
     "imageSrc": "/images/menu/enchiladas.png",
     "category": "Platos/Desayuno",
-    "description": null,
+    "description": {
+      "es": "Sumérgete en la explosión de sabores de nuestras Enchiladas, donde las tortillas rellenas se cubren con una deliciosa salsa.",
+      "en": "Immerse yourself in the burst of flavors of our Enchiladas, where filled tortillas are covered with a delicious sauce.",
+      "de": "Tauche ein in die Geschmacksexplosion unserer Enchiladas, bei denen gefüllte Tortillas mit einer köstlichen Sauce überzogen werden."
+    },
     "options": [
       "con Huevos",
       "con Tasajo"
@@ -101,7 +133,11 @@
     "name": "Memelitas",
     "imageSrc": "/images/menu/memelas.png",
     "category": "Snacks",
-    "description": null,
+    "description": {
+      "es": "Descubre el placer auténtico con nuestras Memelitas, pequeñas delicias donde las tortillas se transforman en irresistibles obras maestras.",
+      "en": "Discover authentic delight with our Memelitas, small treasures where tortillas transform into irresistible masterpieces.",
+      "de": "Entdecken Sie authentisches Vergnügen mit unseren Memelitas, kleinen Schätzen, bei denen sich Tortillas in unwiderstehliche Meisterwerke verwandeln."
+    },
     "options": [
       "de Queso",
       "de Quesillo",
@@ -114,7 +150,11 @@
     "name": "Empanadas",
     "imageSrc": "/images/menu/empadas.png",
     "category": "Snacks",
-    "description": null,
+    "description": {
+      "es": "Deleita tu paladar con la perfección artesanal de nuestras Empanadas, crujientes por fuera y llenas de exquisito relleno por dentro. Cada bocado es un festín de sabores auténticos que capturan la esencia única de este manjar tradicional. Descubre el placer de cada mordida, donde la maestría culinaria se une para crear una experiencia inigualable.",
+      "en": "Delight your palate with the artisanal perfection of our Empanadas, crispy on the outside and filled with exquisite stuffing on the inside. Each bite is a feast of authentic flavors that capture the unique essence of this traditional delicacy. Discover the pleasure of every bite, where culinary mastery comes together to create an unparalleled experience.",
+      "de": "Verwöhnen Sie Ihren Gaumen mit der handwerklichen Perfektion unserer Empanadas, knusprig von außen und gefüllt mit exquisiter Füllung im Inneren. Jeder Bissen ist ein Fest authentischer Aromen, die die einzigartige Essenz dieses traditionellen Leckerbissens einfangen. Entdecken Sie das Vergnügen jeder einzelnen Biss, wo kulinarische Meisterschaft sich vereint, um eine unvergleichliche Erfahrung zu schaffen."
+    },
     "options": [
       "de Amarillo de pollo",
       "de Choriqueso",
@@ -126,105 +166,165 @@
     "name": "Caldo de fandango",
     "imageSrc": "/images/menu/caldo-fandango.png",
     "category": "Snacks",
-    "description": null,
+    "description": {
+      "es": "Sumérgete en la riqueza de sabores con nuestro Caldo de Fandango, una obra maestra culinaria que deleitará tus sentidos.",
+      "en": "Immerse yourself in the richness of flavors with our Caldo de Fandango, a culinary masterpiece that will delight your senses.",
+      "de": "Tauche ein in die Geschmacksvielfalt mit unserem Caldo de Fandango, einem kulinarischen Meisterwerk, das Ihre Sinne verwöhnen wird."
+    },
     "id": 11
   },
   {
     "name": "Molcajetada de chorizo",
     "imageSrc": "/images/menu/molcajetada-chorizo.png",
     "category": "Platos/Fuerte",
-    "description": null,
+    "description": {
+      "es": "Disfruta de la explosión de sabores en nuestra Molcajetada de Chorizo, donde la sazón y la tradición se fusionan para crear un festín inolvidable.",
+      "en": "Savor the explosion of flavors in our Molcajetada de Chorizo, where seasoning and tradition come together to create an unforgettable feast.",
+      "de": "Genießen Sie die Explosion der Aromen in unserer Molcajetada de Chorizo, wo Gewürze und Tradition sich vereinen, um ein unvergessliches Fest zu schaffen."
+    },
     "id": 12
   },
   {
     "name": "Mole de pollo",
     "imageSrc": "/images/menu/pollo-con-mole.png",
     "category": "Platos/Fuerte",
-    "description": null,
+    "description": {
+      "es": "Deléitate con nuestro delicioso Mole de Pollo, una fusión de sabores intensos y suculentos. Jugosas piezas de pollo bañadas en una salsa de mole auténtica, logrando una experiencia culinaria única que te transportará a la riqueza de la gastronomía mexicana.",
+      "en": "Delight yourself with our delicious Chicken Mole, a fusion of intense and succulent flavors. Juicy chicken pieces bathed in an authentic mole sauce, achieving a unique culinary experience that will transport you to the richness of Mexican gastronomy.",
+      "de": "Verwöhnen Sie sich mit unserem köstlichen Chicken Mole, einer Fusion von intensiven und saftigen Aromen. Saftige Hühnerstücke in einer authentischen Mole-Sauce gebadet, für ein einzigartiges kulinarisches Erlebnis, das Sie in die Vielfalt der mexikanischen Gastronomie entführt."
+    },
     "id": 13
   },
   {
     "name": "Tasajo a la mexicana",
     "imageSrc": "/images/menu/tasajo-amc.png",
     "category": "Platos/Fuerte",
-    "description": null,
+    "description": {
+      "es": "Disfruta de nuestro exquisito Tasajo a la Mexicana, una deliciosa combinación de carne marinada con sabores auténticos mexicanos. Cada bocado es una experiencia de sabor inigualable que te hará viajar directamente a la cocina tradicional de México.",
+      "en": "Enjoy our exquisite Mexican-style Tasajo, a delightful combination of marinated meat with authentic Mexican flavors. Each bite is an unparalleled taste experience that will transport you directly to the traditional cuisine of Mexico.",
+      "de": "Genießen Sie unser exquisites mexikanisches Tasajo, eine köstliche Kombination aus mariniertem Fleisch mit authentischen mexikanischen Aromen. Jeder Bissen ist ein unvergleichliches Geschmackserlebnis, das Sie direkt in die traditionelle Küche Mexikos entführt."
+    },
     "id": 14
   },
   {
     "name": "Tasajo encebollado",
     "imageSrc": "/images/menu/tasajo-cb.png",
     "category": "Platos/Fuerte",
-    "description": null,
+    "description": {
+      "es": "Déjate conquistar por nuestro delicioso Tasajo Encebollado, una explosión de sabores con la combinación perfecta de carne y cebolla. Cada porción es una invitación a disfrutar de la auténtica sazón mexicana en cada bocado.",
+      "en": "Let yourself be conquered by our delicious Tasajo Encebollado, an explosion of flavors with the perfect combination of meat and onions. Each portion is an invitation to enjoy the authentic Mexican seasoning in every bite.",
+      "de": "Lassen Sie sich von unserem köstlichen Tasajo Encebollado erobern, eine Explosion von Aromen mit der perfekten Kombination von Fleisch und Zwiebeln. Jede Portion lädt ein, die authentische mexikanische Würze in jedem Bissen zu genießen."
+    },
     "id": 15
   },
   {
     "name": "Pechuga de pollo",
     "imageSrc": "/images/menu/pechuga-de-perro.jpeg",
     "category": "Platos/Fuerte",
-    "description": null,
+    "description": {
+      "es": "Prueba nuestra Pechuga de Pollo, una opción ligera y deliciosa para satisfacer tu paladar. Jugosa pechuga de pollo a la parrilla acompañada de frescas guarniciones, creando una experiencia culinaria que combina lo simple con lo delicioso.",
+      "en": "Try our Chicken Breast, a light and delicious option to satisfy your palate. Grilled juicy chicken breast accompanied by fresh garnishes, creating a culinary experience that combines simplicity with deliciousness.",
+      "de": "Probieren Sie unser Hühnerbrustfilet, eine leichte und köstliche Option, um Ihren Gaumen zu verwöhnen. Saftige gegrillte Hühnerbrust, begleitet von frischen Beilagen, schafft eine kulinarische Erfahrung, die Einfachheit mit Köstlichkeit verbindet."
+    },
     "id": 16
   },
   {
-    "name": "Caf\u00e9 de olla",
+    "name": "Café de olla",
     "imageSrc": "/images/menu/cafeol.png",
     "category": "Bebidas/Caliente",
-    "description": null,
+    "description": {
+      "es": "Disfruta de nuestro aromático Café de Olla, una deliciosa mezcla de café recién hecho con toques de canela y piloncillo. Cada sorbo es una experiencia reconfortante que te transportará a la tradición mexicana de sabores intensos.",
+      "en": "Enjoy our aromatic Café de Olla, a delightful blend of freshly brewed coffee with hints of cinnamon and piloncillo. Each sip is a comforting experience that will transport you to the Mexican tradition of intense flavors.",
+      "de": "Genießen Sie unseren aromatischen Café de Olla, eine köstliche Mischung aus frisch gebrühtem Kaffee mit einem Hauch von Zimt und Piloncillo. Jeder Schluck ist eine tröstende Erfahrung, die Sie in die mexikanische Tradition intensiver Aromen entführt."
+    },
     "id": 17
   },
   {
-    "name": "Caf\u00e9 con leche",
+    "name": "Café con leche",
     "imageSrc": "/images/menu/cafe-leche.png",
     "category": "Bebidas/Caliente",
-    "description": null,
+    "description": {
+      "es": "Déjate envolver por la suavidad de nuestro Café con Leche, una mezcla perfecta de café fuerte con la cremosidad de la leche. Cada sorbo es una experiencia reconfortante que te brindará la energía y el placer de la auténtica tradición cafetera.",
+      "en": "Let yourself be enveloped by the smoothness of our Café con Leche, a perfect blend of strong coffee with the creaminess of milk. Each sip is a comforting experience that will provide you with the energy and pleasure of authentic coffee tradition.",
+      "de": "Lassen Sie sich von der Sanftheit unseres Café con Leche umhüllen, einer perfekten Mischung aus kräftigem Kaffee und der Cremigkeit von Milch. Jeder Schluck ist eine tröstende Erfahrung, die Ihnen die Energie und das Vergnügen der authentischen Kaffee-Tradition bietet."
+    },
     "id": 18
   },
   {
     "name": "Chocolate de agua",
     "imageSrc": "/images/menu/chocolate.png",
     "category": "Bebidas/Caliente",
-    "description": null,
+    "description": {
+      "es": "Descubre la indulgencia de nuestro Chocolate de Agua, una bebida reconfortante con la riqueza del cacao y la dulzura perfecta. Cada sorbo es una experiencia que despertará tus sentidos y te transportará a la tradición chocolatera mexicana.",
+      "en": "Discover the indulgence of our Chocolate de Agua, a comforting drink with the richness of cocoa and the perfect sweetness. Each sip is an experience that will awaken your senses and transport you to the Mexican chocolate tradition.",
+      "de": "Entdecken Sie den Genuss unseres Chocolate de Agua, eines tröstenden Getränks mit der Fülle von Kakao und der perfekten Süße. Jeder Schluck ist eine Erfahrung, die Ihre Sinne wecken und Sie in die mexikanische Schokoladentradition entführen wird."
+    },
     "id": 19
   },
   {
     "name": "Chocolate de leche",
     "imageSrc": "/images/menu/chocolate-lech.png",
     "category": "Bebidas/Caliente",
-    "description": null,
+    "description": {
+      "es": "Deléitate con nuestro Chocolate de Leche, una bebida cremosa y reconfortante que combina la intensidad del cacao con la suavidad de la leche. Cada sorbo es una experiencia indulgente que te envolverá en la tradición chocolatera mexicana.",
+      "en": "Delight yourself with our Chocolate de Leche, a creamy and comforting drink that combines the intensity of cocoa with the smoothness of milk. Each sip is an indulgent experience that will envelop you in the Mexican chocolate tradition.",
+      "de": "Verwöhnen Sie sich mit unserem Chocolate de Leche, einem cremigen und tröstlichen Getränk, das die Intensität des Kakaos mit der Sanftheit der Milch vereint. Jeder Schluck ist eine verwöhnende Erfahrung, die Sie in die mexikanische Schokoladentradition hüllen wird."
+    },
     "id": 20
   },
   {
-    "name": "T\u00e9",
+    "name": "Té",
     "imageSrc": "/images/menu/tea.png",
     "category": "Bebidas/Caliente",
-    "description": null,
+    "description": {
+      "es": "Disfruta de nuestro Té, una selección cuidadosa de infusiones que te brindarán una experiencia única de aromas y sabores. Cada taza es una invitación a relajarte y explorar la diversidad de las mezclas que ofrecemos.",
+      "en": "Enjoy our Tea, a careful selection of infusions that will provide you with a unique experience of aromas and flavors. Each cup is an invitation to relax and explore the diversity of blends we offer.",
+      "de": "Genießen Sie unseren Tee, eine sorgfältige Auswahl von Infusionen, die Ihnen ein einzigartiges Erlebnis von Aromen und Geschmacksrichtungen bieten werden. Jede Tasse ist eine Einladung zum Entspannen und Erkunden der Vielfalt der Mischungen, die wir anbieten."
+    },
     "id": 21
   },
   {
     "name": "Agua p/nescaf\u00e9",
     "imageSrc": "/images/menu/agua-jot.png",
     "category": "Bebidas/Caliente",
-    "description": null,
+    "description": {
+      "es": "Agua caliente",
+      "en": "Hot water",
+      "de": "Heißes Wasser"
+    },
     "id": 22
   },
   {
     "name": "Leche p/nescaf\u00e9",
     "imageSrc": "/images/menu/leche-hot.png",
     "category": "Bebidas/Caliente",
-    "description": null,
+    "description": {
+      "es": "Leche caliente",
+      "en": "Hot milk",
+      "de": "Heiße Milch"
+    },
     "id": 23
   },
   {
     "name": "Atole",
     "imageSrc": "/images/menu/atole.png",
     "category": "Bebidas/Caliente",
-    "description": null,
+    "description": {
+      "es": "Tradicional atolito de masa",
+      "en": "Traditional atole",
+      "de": "Traditionelles Atole"
+    },
     "id": 24
   },
   {
     "name": "Refrescos",
     "imageSrc": "/images/menu/refrescos.png",
     "category": "Bebidas/Frio",
-    "description": null,
+    "description": {
+      "es": "Refrescos",
+      "en": "Sodas",
+      "de": "Erfrischungsgetränke"
+    },
     "options": [
       "Coca-Cola",
       "Manzanita",
@@ -237,7 +337,11 @@
     "name": "Agua de fruta",
     "imageSrc": "/images/menu/agua-fruta.png",
     "category": "Bebidas/Frio",
-    "description": null,
+    "description": {
+      "es": "Agua fresca del día",
+      "en": "Fresh water of the day",
+      "de": "Frisches Wasser des Tages"
+    },
     "options": [
       "Vaso",
       "Jarra"
@@ -248,7 +352,11 @@
     "name": "Licuados",
     "imageSrc": "/images/menu/licuados.png",
     "category": "Bebidas/Frio",
-    "description": null,
+    "description": {
+      "es": "Deliciosos licuados de fruta",
+      "en": "Delicious fruit smoothies",
+      "de": "Leckere Frucht-Smoothies"
+    },
     "options": [
       "Fresa",
       "Pl\u00e1tano",
@@ -262,7 +370,11 @@
     "name": "Micheladas",
     "imageSrc": "/images/menu/micheladas.png",
     "category": "Bebidas/Frio",
-    "description": null,
+    "description": {
+      "es": "Refresca tu paladar con nuestras Micheladas, una experiencia única que combina la chispeante cerveza con la intensidad de sabores de nuestra mezcla exclusiva. Disfruta de la clásica, la irresistible Chamoy, la exótica Tamarindo, la deliciosa Mango, la vibrante Fresa o la tropical Maracuyá. Cada sorbo es un deleite refrescante que hará que cada momento sea inolvidable.",
+      "en": "Refresh your palate with our Micheladas, a unique experience that combines fizzy beer with the intense flavors of our exclusive mix. Enjoy the classic, the irresistible Chamoy, the exotic Tamarind, the delicious Mango, the vibrant Strawberry, or the tropical Passion Fruit. Each sip is a refreshing delight that will make every moment unforgettable.",
+      "de": "Erfrischen Sie Ihren Gaumen mit unseren Micheladas, einer einzigartigen Erfahrung, die spritziges Bier mit der Intensität der Aromen unserer exklusiven Mischung verbindet. Genießen Sie die klassische, die unwiderstehliche Chamoy, die exotische Tamarinde, die köstliche Mango, die lebendige Erdbeere oder die tropische Maracuyá. Jeder Schluck ist eine erfrischende Freude, die jeden Moment unvergesslich macht."
+    },
     "options": [
       "Cl\u00e1sica",
       "Chamoy",
@@ -277,7 +389,11 @@
     "name": "Mezcal",
     "imageSrc": "/images/menu/mezcal.png",
     "category": "Bebidas/Frio",
-    "description": null,
+    "description": {
+      "es": "Embárcate en un viaje de autenticidad con nuestra selección de Mezcales, destilados de agave que capturan la esencia de la tradición mexicana.",
+      "en": "Embark on a journey of authenticity with our selection of Mezcals, agave spirits that capture the essence of Mexican tradition.",
+      "de": "Begib dich auf eine Reise der Authentizität mit unserer Auswahl an Mezcales, Agavenspirituosen, die die Essenz der mexikanischen Tradition einfangen."
+    },
     "options": [
       "Tepeztate",
       "Espad\u00edn",

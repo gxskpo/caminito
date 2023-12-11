@@ -2,24 +2,19 @@ import Head from "next/head";
 import texts from "@/components/texts";
 import languageProvider from "@/components/language";
 import TopBar from "@/components/topbar";
-import {Loader, hideLoader} from "@/components/loader";
+import {Loader} from "@/components/loader";
 import LoadCSS from "@/components/css-loader";
 import MenuObject from "@/components/menu/menu-object";
 import {useEffect, useState} from "react";
-import P from "@/components/p";
 import {MenuDetail, openDetail} from '@/components/menu/detail'
 import ChatAssistant from "@/components/menu/chat";
 
 
 export default function MenuHome() {
     LoadCSS("/css/menu.css")
-    const {currentLang, setLang} = languageProvider();
+    const {currentLang, xSetLang} = languageProvider();
     const [cID, setID] = useState(0);
 
-    useEffect(() => {
-        window.setLang = setLang;
-        window.hideLoader = hideLoader;
-    }, []);
 
     useEffect(() => {
         if (document) {
@@ -38,11 +33,11 @@ export default function MenuHome() {
         <>
             <Head>
                 <title>{texts.Menu.title[currentLang]}</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
             </Head>
             <Loader/>
-            <P/>
-            <TopBar currentPage="menu"/>
-            <MenuDetail cID={cID}/>
+            <TopBar currentPage="menu" currentLang={currentLang} xSetLang={xSetLang}/>
+            <MenuDetail cID={cID} currentLang={currentLang}/>
             <ChatAssistant setIDfn={setID}/>
             <div className="menu-main">
                 <p>{texts.Menu.currencyNotificationText[currentLang]}</p>

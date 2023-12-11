@@ -1,0 +1,226 @@
+[
+  {
+    "name": "0",
+    "category": null,
+    "options": null,
+    "id": 0
+  },
+  {
+    "name": "Huevos al gusto",
+    "category": "Platos/Desayuno",
+    "options": [
+      "de Chorizo",
+      "de Jam\u00f3n",
+      "A la Mexicana"
+    ],
+    "id": 1
+  },
+  {
+    "name": "Omelette",
+    "category": "Platos/Desayuno",
+    "options": [
+      "de Chorizo",
+      "de Jam\u00f3n",
+      "A la Mexicana"
+    ],
+    "id": 2
+  },
+  {
+    "name": "Molcajetada de huevo",
+    "category": "Platos/Desayuno",
+    "id": 3
+  },
+  {
+    "name": "Chilaquiles",
+    "category": "Platos/Desayuno",
+    "options": [
+      "con Huevos",
+      "con Tasajo"
+    ],
+    "id": 4
+  },
+  {
+    "name": "Enfrijoladas",
+    "category": "Platos/Desayuno",
+    "options": [
+      "con Huevos",
+      "con Tasajo"
+    ],
+    "id": 5
+  },
+  {
+    "name": "Entomatadas",
+    "category": "Platos/Desayuno",
+    "options": [
+      "con Huevos",
+      "con Tasajo"
+    ],
+    "id": 6
+  },
+  {
+    "name": "Enmoladas",
+    "category": "Platos/Desayuno",
+    "options": [
+      "con Pollo",
+      "con Tasajo"
+    ],
+    "id": 7
+  },
+  {
+    "name": "Enchiladas",
+    "category": "Platos/Desayuno",
+    "options": [
+      "con Huevos",
+      "con Tasajo"
+    ],
+    "id": 8
+  },
+  {
+    "name": "Memelitas",
+    "category": "Snacks",
+    "options": [
+      "de Queso",
+      "de Quesillo",
+      "de Champi\u00f1on & quesillo",
+      "de Chicarr\u00f3n"
+    ],
+    "id": 9
+  },
+  {
+    "name": "Empanadas",
+    "category": "Snacks",
+    "options": [
+      "de Amarillo de pollo",
+      "de Choriqueso",
+      "de Champi\u00f1on & quesillo"
+    ],
+    "id": 10
+  },
+  {
+    "name": "Caldo de fandango",
+    "category": "Snacks",
+    "id": 11
+  },
+  {
+    "name": "Molcajetada de chorizo",
+    "category": "Platos/Fuerte",
+    "id": 12
+  },
+  {
+    "name": "Mole de pollo",
+    "category": "Platos/Fuerte",
+    "id": 13
+  },
+  {
+    "name": "Tasajo a la mexicana",
+    "category": "Platos/Fuerte",
+    "id": 14
+  },
+  {
+    "name": "Tasajo encebollado",
+    "category": "Platos/Fuerte",
+    "id": 15
+  },
+  {
+    "name": "Pechuga de pollo",
+    "category": "Platos/Fuerte",
+    "id": 16
+  },
+  {
+    "name": "Caf\u00e9 de olla",
+    "category": "Bebidas/Caliente",
+    "id": 17
+  },
+  {
+    "name": "Caf\u00e9 con leche",
+    "category": "Bebidas/Caliente",
+    "id": 18
+  },
+  {
+    "name": "Chocolate de agua",
+    "category": "Bebidas/Caliente",
+    "id": 19
+  },
+  {
+    "name": "Chocolate de leche",
+    "category": "Bebidas/Caliente",
+    "id": 20
+  },
+  {
+    "name": "T\u00e9",
+    "category": "Bebidas/Caliente",
+    "id": 21
+  },
+  {
+    "name": "Agua p/nescaf\u00e9",
+    "category": "Bebidas/Caliente",
+    "id": 22
+  },
+  {
+    "name": "Leche p/nescaf\u00e9",
+    "category": "Bebidas/Caliente",
+    "id": 23
+  },
+  {
+    "name": "Atole",
+    "category": "Bebidas/Caliente",
+    "id": 24
+  },
+  {
+    "name": "Refrescos",
+    "category": "Bebidas/Frio",
+    "options": [
+      "Coca-Cola",
+      "Manzanita",
+      "Mirinda",
+      "Jarritos: pi\u00f1a/tutifruti/pepsi/7up"
+    ],
+    "id": 25
+  },
+  {
+    "name": "Agua de fruta",
+    "category": "Bebidas/Frio",
+    "options": [
+      "Vaso",
+      "Jarra"
+    ],
+    "id": 26
+  },
+  {
+    "name": "Licuados",
+    "category": "Bebidas/Frio",
+    "options": [
+      "Fresa",
+      "Pl\u00e1tano",
+      "Papaya",
+      "Mango",
+      "Chocomilk"
+    ],
+    "id": 27
+  },
+  {
+    "name": "Micheladas",
+    "category": "Bebidas/Frio",
+    "options": [
+      "Cl\u00e1sica",
+      "Chamoy",
+      "Tamarindo",
+      "Mango",
+      "Fresa",
+      "Maracuya"
+    ],
+    "id": 28
+  },
+  {
+    "name": "Mezcal",
+    "category": "Bebidas/Frio",
+    "options": [
+      "Tepeztate",
+      "Espad\u00edn",
+      "Arroque\u00f1o",
+      "Tobala",
+      "Jabal\u00ed"
+    ],
+    "id": 29
+  }
+]

@@ -1,11 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Agbalumo");
+@import url('https://fonts.googleapis.com/css?family=Source Code Pro');
+
 
 .background-image-sec-one{
     position: relative;
     width: 100%;
     height: 100%;
     background-image: url("/images/main-bg.jpeg");
-    filter: grayscale(50%)
+    background-repeat: no-repeat;
+    /* cover */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .top-section {
@@ -26,12 +32,25 @@
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.top-section > i{
-    position: absolute;
-    bottom: 10vh;
-    color: blue;
-    font-size: 2em;
-    left: 47vw;
+.top-section {
+    text-align: center;
+}
+
+.top-section > button{
+    padding: 10px 20px;
+    margin: 3px;
+    border-radius: 15px;
+    border: none;
+    /* orange */
+    background-color: #e34d23;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.top-section > .source-code{
+    background-color: #24292e;
+    font-family: 'Source Code Pro', monospace;
 }
 
 @media only screen and (max-width: 768px) {
