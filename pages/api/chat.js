@@ -1,4 +1,5 @@
 import menu from '@/public/menu-mini.json';
+
 export default async function chatHandler(req, res) {
     let content_type = req.headers["Content-Type"] ?? req.headers["content-type"] ?? null;
 
@@ -12,24 +13,14 @@ export default async function chatHandler(req, res) {
         res.status(406).json({
             'message': 'Oops! An error occurred: Invalid Content-Type'
         })
-    } else if(!req.body) {
+    } else if (!req.body || !req.body.messages || !req.body.messages.length > 0) {
         res.status(400).json({
             'message': 'Oops! An error occurred: Body is empty'
-        })
-    } else if (req.body && !req.body.messages) {
-        res.status(400).json({
-            'message': 'Oops! An error occurred: Missing `messages` field in body'
-        })
-    } else if (req.body && req.body.messages && !req.body.messages.length > 0) {
-        console.log(req.body)
-        console.log(req.body.messages)
-        res.status(406).json({
-            'message': 'Oops! An error occurred: `messages` '
         })
     } else {
         const apiKey = process.env.OPENAI_API_KEY;
         const clear_menu = menu.map(item => {
-            const { description, ...rest } = item;
+            const {description, ...rest} = item;
             return rest;
         });
 

@@ -21,6 +21,7 @@
 }
 
 .menu-main > .menu-section {
+    position: relative;
     display: grid;
     grid-template-columns: auto;
     grid-auto-flow: column;
@@ -95,6 +96,11 @@
 
 @media only screen and (min-width: 768px) {
     .menu-main > .menu-section {
+        /* Make items to don't have excesive space if they cannot fill the width*/
+        grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
+        grid-auto-flow: row;
+        grid-gap: 1vw;
+        height: auto;
     }
 
     .menu-object-cl {
