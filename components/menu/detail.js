@@ -1,8 +1,12 @@
 import menu from '@/public/menu.json';
 
 export function openDetail({cID, setIDFn}) {
+    if (cID < 0 || cID > menu.length) {
+        return null;
+    }
     setIDFn(cID);
     document.querySelector("#mdj3").style.display = "flex";
+    return document.querySelector("#mdj3");
 }
 
 export function MenuDetail({cID, currentLang}) {

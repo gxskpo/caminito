@@ -9,13 +9,25 @@ import {useEffect, useState} from "react";
 import {MenuDetail, openDetail} from '@/components/menu/detail'
 import ChatAssistant from "@/components/menu/chat";
 import menu from "@/public/menu.json";
+import {useRouter} from "next/router";
 
 
 export default function MenuHome() {
-    LoadCSS("/css/menu.css")
+    const router = useRouter();
     const {currentLang, xSetLang} = languageProvider();
     const [cID, setID] = useState(0);
     let courses = {}
+    LoadCSS("/css/menu.css")
+
+    const {item_id} = router.query;
+
+    useEffect(() => {
+        if (item_id) {
+            openDetail({cID: Number(item_id), setIDFn: setID})
+        }
+
+
+    }, [item_id])
 
     useEffect(() => {
         if (document) {
@@ -46,7 +58,7 @@ export default function MenuHome() {
         let category_name = String(category).toLowerCase()
         return courses[category_name]
     }
-    
+
     return (
         <>
             <Head>
@@ -58,7 +70,9 @@ export default function MenuHome() {
             <MenuDetail cID={cID} currentLang={currentLang}/>
             <ChatAssistant setIDfn={setID}/>
             <div className="menu-main">
+                <span>{texts.Menu.menuDescription[currentLang]}</span>
                 <p>{texts.Menu.currencyNotificationText[currentLang]}</p>
+
                 <h1>{texts.Menu.breakfastsSection.title[currentLang]}</h1>
                 <div className="menu-section">
                     {categoryChildren('Platos/Desayuno')}

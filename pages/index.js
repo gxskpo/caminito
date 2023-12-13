@@ -24,6 +24,7 @@ export default function Home() {
             <div className="background-image-sec-one">
                 <div className="top-section">
                     <h1>Caminito al cielo</h1>
+                    <p>{texts.Home.description[currentLang]}</p>
                     <button className='go-menubnt' onClick={() => {
                         router.push("/menu")
                     }}><i className="fa-solid fa-utensils"></i> {texts.Home.viewMenuButton[currentLang]}</button>
@@ -36,8 +37,6 @@ export default function Home() {
                     }}><i className="fa-brands fa-github"></i> {texts.Home.viewSourceCodeButton[currentLang]}</button>
                 </div>
             </div>
-
         </>
     )
-
 }

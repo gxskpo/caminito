@@ -27,7 +27,6 @@ export default function TopBar({currentPage, currentLang, xSetLang}) {
         if (timesUserPressedCurrentPage >= 5) {
             alert("Where are you trying to go? -_-")
         }
-        console.log(timesUserPressedCurrentPage)
         toggleMenu();
     }
 
@@ -43,7 +42,6 @@ export default function TopBar({currentPage, currentLang, xSetLang}) {
 
     useEffect(() => {
         setSelectedLang(currentLang)
-        console.log(currentLang)
     }, [currentLang]);
 
     const handleSetLang = (e) => {
@@ -86,7 +84,10 @@ export default function TopBar({currentPage, currentLang, xSetLang}) {
                         <option value="en">🇺🇸English</option>
                         <option value="de">🇩🇪Deutsch</option>
                     </select>
-
+                    <button onClick={() => {
+                        router.push("/services")
+                    }} id="tpb_services">{texts.global.topBar.services[currentLang]}
+                    </button>
                     <button onClick={() => {
                         router.push("/about")
                     }} id="tpb_about">{texts.global.topBar.about[currentLang]}

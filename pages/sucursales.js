@@ -30,7 +30,7 @@ export default function Sucursales() {
                 </div>
                 <div className="branch-detail">
                     <h3>Teotitlán del Valle</h3>
-                    <p>Av. Juarez s/n, frente al centro de salud, Teotitlán del Valle, Tlacolula, Oax.</p>
+                    <p>Av. Juarez s/n, frente al centro de salud, Teotitlán del Valle N°170, Tlacolula, Oax.</p>
                     <button className="map-button" onClick={() => {
                         router.push("https://www.google.com/maps/place/Restaurant+El+Arte+Teotiteco")
                     }}><i className="fa-solid fa-location-dot"></i> {texts.Locations.googleMapsButton[currentLang]}
