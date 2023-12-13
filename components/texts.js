@@ -25,6 +25,11 @@ const texts = {
                 "es": "Acerca de",
                 "en": "About",
                 "de": "Über",
+            },
+            services: {
+                "es": "Servicios Especiales",
+                "en": "Special Services",
+                "de": "Spezielle Dienstleistungen"
             }
         }
     },
@@ -33,6 +38,11 @@ const texts = {
             "es": "Caminito al cielo | Restaurante",
             "en": "Pathway to Heaven | Restaurant",
             "de": "Weg zum Himmel | Restaurant",
+        },
+        description: {
+            "es": "Brindamos a nuestros clientes servicio a la carta y buffet a precios accesibles",
+            "en": "We offer our customers à la carte and buffet service at affordable prices",
+            "de": "Wir bieten unseren Kunden à la carte und Buffet-Service zu erschwinglichen Preisen"
         },
         viewLocationsButton: {
             "es": "Ver sucursales",
@@ -61,6 +71,11 @@ const texts = {
             "es": "Imágenes solo ilustrativas",
             "en": "Images for illustrative purposes only",
             "de": "Bilder nur zur Veranschaulichung",
+        },
+        menuDescription: {
+            "es": "",
+            "en": "",
+            "de": ""
         },
         dealsSection: {
             title: {
@@ -117,7 +132,7 @@ const texts = {
             "de": "In Google Maps ansehen"
         }
     },
-    AboutUs:{
+    AboutUs: {
         title: {
             "es": "Acerca de nosotros",
             "en": "About us",
@@ -130,9 +145,9 @@ const texts = {
                 "de": "Über uns"
             },
             description: {
-                "es": "Nosotros somos una familia de emprendedores en el negocio restaurantero para dar a conocer el sazón hogareño, ofrecemos una experiencia degustativa inigualable de platillos tradicionales del valle de Oaxaca, con el sazón de la familia.",
-                "en": "We are a family of entrepreneurs in the restaurant business to make known the home seasoning, we offer an unparalleled tasting experience of traditional dishes from the Oaxaca valley, with the seasoning of the family.",
-                "de": "Wir sind eine Familie von Unternehmern im Restaurantgeschäft, um die heimische Würze bekannt zu machen. Wir bieten ein unvergleichliches Geschmackserlebnis mit traditionellen Gerichten aus dem Oaxaca-Tal und der Würze der Familie."
+                "es": "Somos una familia oaxaqueña dedicada a la elaboración de comida típica del estado, sirviendo exquisita comida preparada de forma ancestral con los ingredientes de la región, recetas que han trascendido generaciones para deleitar al paladar de nuestros comensales",
+                "en": "We are a Oaxacan family dedicated to the preparation of typical state food, serving exquisite dishes prepared in an ancestral way with region-specific ingredients. These recipes have transcended generations to delight the palates of our diners.",
+                "de": "Wir sind eine oaxaqueñische Familie, die sich der Zubereitung von typischem Essen des Staates verschrieben hat. Wir servieren exquisite Gerichte, die auf traditionelle Weise mit Zutaten aus der Region zubereitet werden. Diese Rezepte haben Generationen überdauert, um die Gaumen unserer Gäste zu erfreuen."
             }
         },
         aboutDeveloper: {
@@ -153,7 +168,30 @@ const texts = {
                 "de": "Quellcode ansehen"
             }
         },
-    }
+    },
+    Services: {
+        title: {
+            "es": "Servicios Especiales",
+            "en": "Special Services",
+            "de": "Spezielle Dienstleistungen"
+        },
+        h1: {
+            "es": "Tours, eventos y más",
+            "en": "Tours, events and more",
+            "de": "Touren, Veranstaltungen und mehr"
+        },
+        description: {
+            "es": "Brindamos servicio de eventos en nuestras dos instalaciones, siempre con la calidad que nos caracteriza",
+            "en": "We provide event service in our two facilities, always with the quality that characterizes us",
+            "de": "Wir bieten Event-Service in unseren beiden Einrichtungen, immer mit der Qualität, die uns auszeichnet"
+        },
+        getInTouch: {
+            "es": "Contáctanos",
+            "en": "Get in touch",
+            "de": "Kontaktiere uns"
+        }
+    },
+
 }
 
 export default texts;
