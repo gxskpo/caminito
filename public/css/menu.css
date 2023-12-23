@@ -401,7 +401,6 @@
     height: 10%;
     background-color: #fff;
     border-top: 1px solid #ccc;
-
 }
 
 .chat-container .chat-input input {
@@ -526,11 +525,17 @@
 @media only screen and (max-width: 600px) {
     /* Adjust styles for screens with a width of 600 pixels or less (typical mobile devices) */
     .chat-container {
+        /* Make container shorter to avoid overlapping with the bottom bar from Safari */
+        height: 70vh;
         width: 90vw; /* Adjusted width for better mobile layout */
         margin-left: 5vw; /* Adjusted margin for better mobile placement */
     }
 
     .chat-container .chat-header {
         height: 15%; /* Adjusted height for better mobile layout */
+    }
+
+    .chat-container .chat-input input:focus {
+        font-size: 1em;
     }
 }
