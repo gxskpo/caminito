@@ -535,4 +535,8 @@
     .chat-container .chat-input input:focus {
         font-size: 1em;
     }
+
+    .chat-container .chat-messages .chat-message .menu-message-embed {
+        /* TODO: Change embed height, it isn't showed fully on mobile */
+    }
 }

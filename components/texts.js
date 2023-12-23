@@ -1,3 +1,5 @@
+/* TODO: Translations for: `Options` (.menu-detail-container > h3 ) */
+
 const texts = {
     global: {
         topBar: {

@@ -3,12 +3,7 @@ import menu from '@/public/menu-mini.json';
 export default async function chatHandler(req, res) {
     let content_type = req.headers["Content-Type"] ?? req.headers["content-type"] ?? null;
 
-    if (!content_type) {
-        res.setHeader('Accept', 'application/json')
-        res.status(406).json({
-            'message': 'Oops! An error occurred: Invalid Content-Type'
-        })
-    } else if (content_type !== "application/json") {
+    if (!content_type || content_type !== "application/json") {
         res.setHeader('Accept', 'application/json')
         res.status(406).json({
             'message': 'Oops! An error occurred: Invalid Content-Type'
@@ -23,17 +18,15 @@ export default async function chatHandler(req, res) {
             const {description, ...rest} = item;
             return rest;
         });
-
         let messages = []
         messages.push(
             {
                 'role': 'system',
                 'content': `Eres una IA que ayuda en un restaurante, debe recomendar platillos, y ser servicial, no debe responder a preguntas no relacionadas al restaurante, cuando algun usuario solicite una reomendación o información de un platillo deberá responder con 
-[item:<item_id>] SIEMPRE, recuerda SIEMPRE dejar un espacio después de que se cierran los corchetes.
-MENU a continuación(JSON): ${JSON.stringify(clear_menu)}.`
+                [item:<item_id>] SIEMPRE, recuerda SIEMPRE dejar un espacio después de que se cierran los corchetes.
+                MENU a continuación(JSON): ${JSON.stringify(clear_menu)}.`
             }
         );
-
         messages.push(...req.body.messages);
         let response = await fetch('https://api.openai.com/v1/chat/completions', {
             method: 'POST',
