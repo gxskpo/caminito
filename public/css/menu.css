@@ -523,12 +523,14 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
-    .skeleton-element {
-        height: 10vh;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.52); /* Color más claro para representar un esqueleto */
-        animation: pulse 1.5s infinite; /* Animación opcional para dar la sensación de que está "respirando" */
-        position: absolute;
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for screens with a width of 600 pixels or less (typical mobile devices) */
+    .chat-container {
+        width: 90vw; /* Adjusted width for better mobile layout */
+        margin-left: 5vw; /* Adjusted margin for better mobile placement */
+    }
+
+    .chat-container .chat-header {
+        height: 15%; /* Adjusted height for better mobile layout */
     }
 }
