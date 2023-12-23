@@ -131,6 +131,7 @@
         width: 100%;
         height: 100%;
         display: block;
+        border-radius: 5px 5px 0 0;
     }
 }
 
@@ -152,8 +153,6 @@
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
     z-index: 999999;
-    animation-name: menuDetailAnimation;
-
 }
 
 .menu-detail-container .menu-item-detail {
@@ -259,23 +258,27 @@
 .chat-container-bk {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
     display: none;
-    overflow: hidden;
-    z-index: 9999999999;
+    z-index: 999999;
 }
 
 .chat-container {
-    width: 96%;
-    margin-left: 2vw;
-    top: 9%;
-    height: 90%;
+    height: 80vh;
+    margin-top: 10vh;
     background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    position: fixed;
+    width: 30vw;
+    margin-left: 69vw;
+    position: relative;
+    z-index: 101;
+    overflow-y: scroll;
+    border-radius: 15px;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-name: menuDetailAnimation;
 }
 
 .chat-container .chat-header {
